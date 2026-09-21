@@ -3,46 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پرتقال | اولین هوش مصنوعی آفلاین ایران با مدل اختصاصی</title>
-    <meta name="description" content="پرتقال، اولین دستیار هوش مصنوعی کاملاً آفلاین ایرانی با مدل اختصاصی PortaghalIR-3. بدون نیاز به اینترنت، با بیش از ۲۰ ابزار کنترلی. دانلود رایگان از مایکت.">
-    <meta name="keywords" content="هوش مصنوعی آفلاین, پرتقال, PortaghalIR, دستیار هوشمند فارسی, AI ایرانی, چت‌بات آفلاین">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://you1405com-bot.github.io/p/">
-
+    <title>هوش مصنوعی پرتقال | گروه برنامه نویسی پرتقال</title>
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Fontsource Vazirmatn -->
+    
+    <!-- Fontsource Vazirmatn (Persian Font) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@5.0.13/index.min.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍊</text></svg>">
 
     <style>
         body {
             font-family: 'Vazirmatn', sans-serif;
             background-color: #fff7ed;
         }
+        
         .gradient-text {
             background: linear-gradient(to left, #ea580c, #fbbf24);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .float-animation {
             animation: float 6s ease-in-out infinite;
         }
+
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
             100% { transform: translateY(0px); }
         }
+
         .blob {
             position: absolute;
             filter: blur(40px);
             z-index: -1;
             opacity: 0.4;
         }
-        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
     </style>
 </head>
 <body class="text-gray-800 overflow-x-hidden">
@@ -52,20 +48,22 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center gap-3">
-                    <span class="text-3xl">🍊</span>
-                    <span class="font-bold text-2xl text-orange-600 tracking-tight">پرتقال</span>
+                    <img src="https://api.iconify.design/fluent-emoji:tangerine.svg" alt="Logo" class="w-10 h-10">
+                    <span class="font-bold text-2xl text-orange-600 tracking-tight">هوش مصنوعی پرتقال</span>
                 </div>
                 <div class="hidden md:flex space-x-8 space-x-reverse items-center">
+                    <a href="#home" class="text-gray-600 hover:text-orange-600 font-medium transition">خانه</a>
                     <a href="#about" class="text-gray-600 hover:text-orange-600 font-medium transition">درباره ما</a>
+                    <a href="#founder" class="text-gray-600 hover:text-orange-600 font-medium transition">بنیان‌گذار</a>
                     <a href="#features" class="text-gray-600 hover:text-orange-600 font-medium transition">قابلیت‌ها</a>
-                    <a href="#models" class="text-gray-600 hover:text-orange-600 font-medium transition">مدل‌ها</a>
                     <a href="#faq" class="text-gray-600 hover:text-orange-600 font-medium transition">سوالات متداول</a>
                     <a href="#download" class="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition shadow-lg hover:shadow-orange-500/30">
                         دانلود اپلیکیشن
                     </a>
                 </div>
+                <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-orange-600 focus:outline-none" aria-label="منو">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-orange-600 focus:outline-none">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
@@ -76,12 +74,11 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-orange-50">خانه</a>
                 <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-orange-50">درباره ما</a>
+                <a href="#founder" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-orange-50">بنیان‌گذار</a>
                 <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-orange-50">قابلیت‌ها</a>
-                <a href="#models" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-orange-50">مدل‌ها</a>
-                <a href="#guide" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-orange-50">راهنما</a>
                 <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-orange-50">سوالات متداول</a>
-                <a href="#related" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-orange-50">پروژه‌های مرتبط</a>
                 <a href="#download" class="block px-3 py-2 mt-4 text-center rounded-md text-base font-medium bg-orange-600 text-white">دانلود اپلیکیشن</a>
             </div>
         </div>
@@ -89,35 +86,37 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-        <div class="blob bg-orange-300 w-96 h-96 rounded-full top-0 right-0"></div>
-        <div class="blob bg-yellow-300 w-96 h-96 rounded-full bottom-0 left-0"></div>
+        <!-- Background Blobs -->
+        <div class="blob bg-orange-300 w-96 h-96 rounded-full top-0 right-0 mix-blend-multiply filter blur-xl opacity-70"></div>
+        <div class="blob bg-yellow-300 w-96 h-96 rounded-full bottom-0 left-0 mix-blend-multiply filter blur-xl opacity-70"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="text-right space-y-8">
                     <div class="inline-flex items-center px-4 py-2 rounded-full bg-orange-100 text-orange-700 text-sm font-semibold mb-4">
                         <span class="w-2 h-2 bg-orange-600 rounded-full ml-2 animate-pulse"></span>
-                        اولین هوش مصنوعی آفلاین ایران
+                        گروه برنامه نویسی پرتقال
                     </div>
                     <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight text-gray-900">
                         هوش مصنوعی <br>
                         <span class="gradient-text">پرتقال</span>
                     </h1>
                     <p class="text-xl text-gray-600 leading-relaxed max-w-2xl">
-                        اولین دستیار هوشمند کاملاً آفلاین ایرانی با مدل زبانی اختصاصی <strong class="text-orange-600">PortaghalIR-3</strong>. بدون نیاز به اینترنت، بدون نگرانی از حریم خصوصی. تمام قدرت هوش مصنوعی روی گوشی شما.
+                        ما در استان لرستان، با تکیه بر تکنولوژی و همدلی، اولین هوش مصنوعی کاملاً آفلاین ایران را ساخته‌ایم. بیایید دنیایی روشن‌تر بسازیم.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#download" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-white bg-orange-600 hover:bg-orange-700 md:text-xl shadow-lg hover:shadow-orange-500/40 transition transform hover:-translate-y-1">
                             <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                            دانلود رایگان
+                            دریافت اپلیکیشن
                         </a>
-                        <a href="#features" class="inline-flex justify-center items-center px-8 py-4 border-2 border-orange-200 text-lg font-medium rounded-xl text-orange-700 bg-white hover:bg-orange-50 md:text-xl transition">
-                            مشاهده قابلیت‌ها
+                        <a href="#about" class="inline-flex justify-center items-center px-8 py-4 border-2 border-orange-200 text-lg font-medium rounded-xl text-orange-700 bg-white hover:bg-orange-50 md:text-xl transition">
+                            بیشتر بدانید
                         </a>
                     </div>
                 </div>
                 <div class="relative lg:h-[600px] flex justify-center items-center">
-                    <img src="https://placehold.co/600x600/fb923c/ffffff?text=Portaghal+AI" alt="پرتقال AI" class="rounded-3xl shadow-2xl float-animation border-4 border-white relative z-10 w-full max-w-md object-cover">
+                    <img src="https://placehold.co/600x600/fb923c/ffffff?text=Portaghal+AI+Preview" alt="اپلیکیشن پرتقال" class="rounded-3xl shadow-2xl float-animation border-4 border-white relative z-10 w-full max-w-md object-cover">
+                    
                     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-orange-400 to-yellow-300 rounded-full opacity-20 blur-3xl -z-10"></div>
                 </div>
             </div>
@@ -148,77 +147,53 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About & Founder Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">پرتقال <span class="gradient-text">چیست</span>؟</h2>
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">داستان ما</h2>
                 <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
-                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">هر آنچه باید درباره اولین هوش مصنوعی آفلاین ایران بدانید</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-                <div class="lg:col-span-2 space-y-6">
-                    <p class="text-gray-700 leading-relaxed text-lg">
-                        <strong class="text-orange-600">پرتقال</strong> یک دستیار هوش مصنوعی کاملاً آفلاین است که به‌طور اختصاصی برای کاربران ایرانی طراحی و توسعه یافته است. برخلاف سرویس‌های ابری که برای هر پرسش باید به سرورهای خارج از کشور متصل شوند، پرتقال تمام پردازش‌های زبانی خود را به‌صورت <strong>محلی روی گوشی اندروید شما</strong> انجام می‌دهد؛ بدون نیاز به اینترنت و بدون ارسال داده به بیرون.
-                    </p>
-
-                    <h3 class="text-2xl font-bold text-gray-800 mt-8">چرا هوش مصنوعی آفلاین مهم است؟</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        سرویس‌های ابری سه مشکل اساسی دارند: <strong>حریم خصوصی</strong> (مکالمات روی سرورهای ثالث ذخیره می‌شود)، <strong>وابستگی به اینترنت</strong> (در سفر یا قطعی شبکه بی‌استفاده می‌شوند)، و <strong>مشکل دسترسی</strong> برای کاربران ایرانی به‌دلیل تحریم‌ها و پرداخت ارزی. پرتقال این سه مشکل را به‌طور ریشه‌ای حل می‌کند.
-                    </p>
-
-                    <h3 class="text-2xl font-bold text-gray-800 mt-8">PortaghalIR-3 چگونه کار می‌کند؟</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        مدل PortaghalIR-3 با تکنیک‌های پیشرفته فشرده‌سازی (Quantization) به حجم فوق‌العاده کمی رسیده است؛ نتیجه‌ی ماه‌ها تحقیق و بهینه‌سازی تیم فنی پرتقال. همین مدل سبک قادر است:
-                    </p>
-                    <ul class="space-y-3 mt-4">
-                        <li class="flex items-start text-gray-700">
-                            <svg class="w-6 h-6 text-green-500 ml-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            به پرسش‌های روزمره به زبان فارسی پاسخ دهد
-                        </li>
-                        <li class="flex items-start text-gray-700">
-                            <svg class="w-6 h-6 text-green-500 ml-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            ابزارهای دستگاه مثل وای‌فای، بلوتوث، چراغ‌قوه و روشنایی صفحه را کنترل کند
-                        </li>
-                        <li class="flex items-start text-gray-700">
-                            <svg class="w-6 h-6 text-green-500 ml-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            متن را از گفتار تشخیص دهد و به گفتار تبدیل کند
-                        </li>
-                        <li class="flex items-start text-gray-700">
-                            <svg class="w-6 h-6 text-green-500 ml-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            صفحه را خوانده، اسکرول کرده و روی عناصر کلیک کند
-                        </li>
-                        <li class="flex items-start text-gray-700">
-                            <svg class="w-6 h-6 text-green-500 ml-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            فایل‌های متنی، PDF و DOCX را تحلیل کند
-                        </li>
-                        <li class="flex items-start text-gray-700">
-                            <svg class="w-6 h-6 text-green-500 ml-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            روی دستگاه‌های قدیمی با حافظه کم هم روان اجرا شود
-                        </li>
-                    </ul>
-
-                    <h3 class="text-2xl font-bold text-gray-800 mt-8">چه کسانی باید از پرتقال استفاده کنند؟</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        پرتقال برای طیف گسترده‌ای از کاربران مناسب است: <strong>دانشجویان و دانش‌آموزان</strong> که می‌خواهند بدون هزینه از AI استفاده کنند، <strong>متخصصانی</strong> که باید اسناد محرمانه را تحلیل کنند، کاربران در <strong>مناطق با اینترنت ضعیف</strong>، و همه‌ی کسانی که به‌دلیل تحریم به سرویس‌های خارجی دسترسی ندارند.
-                    </p>
-                </div>
-
-                <!-- Sidebar Card -->
-                <div class="bg-orange-50 p-8 rounded-3xl border border-orange-100 shadow-sm">
-                    <div class="flex items-start gap-6 flex-col">
-                        <div class="w-20 h-20 bg-orange-200 rounded-full flex items-center justify-center text-4xl">
-                            🍊
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <!-- Founder Info -->
+                <div id="founder" class="order-2 md:order-1 bg-orange-50 p-8 rounded-3xl border border-orange-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-20 h-20 bg-orange-200 rounded-full flex items-center justify-center text-3xl">
+                                👨‍💻
+                            </div>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">پرتقال AI</h3>
-                            <p class="text-orange-600 font-medium mb-4">اولین AI آفلاین ایران</p>
-                            <p class="text-gray-600 leading-relaxed text-sm">
-                                ساخته شده با ❤️ توسط گروه برنامه‌نویسی پرتقال از استان لرستان. تمرکز ما بر توسعه‌ی فناوری بومی، حفظ حریم خصوصی و دسترسی آزاد همه‌ی ایرانیان به هوش مصنوعی است.
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">امیر حسن کریمی</h3>
+                            <p class="text-orange-600 font-medium mb-4">بنیان‌گذار و مدیر فنی</p>
+                            <p class="text-gray-600 leading-relaxed">
+                                با هدف ایجاد بستری شفاف و مدرن برای توسعه فناوری بومی، این پروژه توسط گروه برنامه‌نویسی پرتقال و با مدیریت ایشان راه‌اندازی شد. تمرکز ما بر استفاده از فناوری برای تسهیل دسترسی آزاد همه ایرانیان به هوش مصنوعی است.
                             </p>
                         </div>
                     </div>
+                </div>
+
+                <!-- Mission Text -->
+                <div class="order-1 md:order-2 space-y-6">
+                    <h3 class="text-2xl font-bold text-gray-800">چرا پرتقال؟</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        نام "پرتقال" نمادی از انرژی، تازگی و حیاتی است که می‌خواهیم به جامعه تزریق کنیم. ما معتقدیم تکنولوژی باید در خدمت انسانیت باشد.
+                    </p>
+                    <ul class="space-y-4 mt-4">
+                        <li class="flex items-center text-gray-700">
+                            <svg class="w-6 h-6 text-green-500 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            مستقر در استان لرستان
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <svg class="w-6 h-6 text-green-500 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            توسعه یافته توسط متخصصین بومی
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <svg class="w-6 h-6 text-green-500 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            رابط کاربری ساده و سریع
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -280,134 +255,32 @@
                 <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
                     <div class="text-4xl mb-4">🧠</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">مدیریت مدل‌های زبانی</h3>
-                    <p class="text-gray-600 mb-4">بارگذاری و مدیریت مدل‌های مختلف زبانی با قابلیت دانلود هوشمند.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">مدل اختصاصی PortaghalIR-3</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">مدل Gemma-2 2B IT</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">دانلود موازی چندبخشی</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">حفظ تاریخچه‌ی مکالمات</span></li>
-                    </ul>
+                    <p class="text-gray-600">بارگذاری و مدیریت مدل‌های مختلف زبانی با قابلیت دانلود هوشمند و حفظ تاریخچه‌ی مکالمات.</p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
                     <div class="text-4xl mb-4">🔧</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">فراخوانی ابزار (Tool Calling)</h3>
-                    <p class="text-gray-600 mb-4">مدل هوشمند می‌تواند ابزارهای دستگاه شما را مستقیماً کنترل کند.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">کنترل وای‌فای و بلوتوث</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">مدیریت تنظیمات سیستم</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">خواندن و ارسال اعلان‌ها</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">کنترل سخت‌افزار</span></li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">فراخوانی ابزار</h3>
+                    <p class="text-gray-600">مدل هوشمند می‌تواند ابزارهای دستگاه شما را مستقیماً کنترل کند؛ از وای‌فای تا تنظیمات سیستم.</p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
                     <div class="text-4xl mb-4">♿</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">دسترسی‌پذیری پیشرفته</h3>
-                    <p class="text-gray-600 mb-4">کنترل کامل دستگاه از طریق سرویس Accessibility.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">خواندن متن صفحه</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">کلیک و تایپ خودکار</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">اسکرول و ناوبری</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">باز کردن اپلیکیشن‌ها</span></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
-                    <div class="text-4xl mb-4">🌐</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">سرور محلی HTTP</h3>
-                    <p class="text-gray-600 mb-4">ارتباط با دستگاه‌های دیگر از طریق سرور داخلی روی پورت ۸۵۰۰.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">پشتیبانی از SSE</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">مدیریت دستگاه‌های متصل</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">اجرا به‌عنوان سرویس پیش‌زمینه</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">اتصال از طریق مرورگر</span></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
-                    <div class="text-4xl mb-4">📡</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">هات‌اسپات محلی</h3>
-                    <p class="text-gray-600 mb-4">ایجاد شبکه‌ی محلی برای اتصال دستگاه‌ها بدون نیاز به روتر.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">راه‌اندازی آسان هات‌اسپات</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">اشتراک‌گذاری اینترنت</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">اتصال مستقیم دستگاه‌ها</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">بدون نیاز به اینترنت خارجی</span></li>
-                    </ul>
+                    <p class="text-gray-600">کنترل کامل دستگاه از طریق سرویس Accessibility؛ خواندن صفحه، کلیک، تایپ و اسکرول خودکار.</p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
                     <div class="text-4xl mb-4">🎙️</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">ورودی صوتی و گفتار</h3>
-                    <p class="text-gray-600 mb-4">تعامل صوتی کامل با پشتیبانی از زبان فارسی.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">تبدیل گفتار به متن (STT)</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">تبدیل متن به گفتار (TTS)</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">پشتیبانی کامل از فارسی</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">صدای طبیعی و روان</span></li>
-                    </ul>
+                    <p class="text-gray-600">تعامل صوتی کامل با پشتیبانی از زبان فارسی در تبدیل گفتار به متن و متن به گفتار.</p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
                     <div class="text-4xl mb-4">📸</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">اسکرین‌شات هوشمند</h3>
-                    <p class="text-gray-600 mb-4">گرفتن اسکرین‌شات از صفحه و تحلیل محتوای آن توسط مدل.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">ضبط صفحه با MediaProjection</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">خروجی PNG با Base64</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">تحلیل خودکار محتوا</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">اشتراک‌گذاری آسان</span></li>
-                    </ul>
+                    <p class="text-gray-600">گرفتن اسکرین‌شات از صفحه و تحلیل محتوای آن توسط مدل به‌صورت خودکار.</p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
                     <div class="text-4xl mb-4">📎</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">مدیریت فایل‌های پیوست</h3>
-                    <p class="text-gray-600 mb-4">امکان پیوست فایل و استفاده از سیستم RAG برای فایل‌های حجیم.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">پشتیبانی از TXT, MD, JSON, CSV</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">پشتیبانی از فایل‌های DOCX</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">سیستم RAG برای فایل‌های بزرگ</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">استخراج هوشمند بخش‌های مرتبط</span></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
-                    <div class="text-4xl mb-4">🔒</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">امنیت و حریم خصوصی</h3>
-                    <p class="text-gray-600 mb-4">تمام پردازش‌ها روی دستگاه شما انجام می‌شود.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">توکن امنیتی برای WebView</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">بدون ارسال داده به سرور</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">اعتبارسنجی تمام درخواست‌ها</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">رمزنگاری ارتباطات داخلی</span></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
-                    <div class="text-4xl mb-4">💰</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">پرداخت درون‌برنامه‌ای</h3>
-                    <p class="text-gray-600 mb-4">سیستم سکه و اشتراک با پشتیبانی از فروشگاه مایکت.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">۱۰ سکه‌ی رایگان روزانه</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">بسته‌های ۲۰، ۴۰، ۱۰۰ و ۳۰۰ سکه‌ای</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">اشتراک ماهانه ویژه</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">پرداخت امن از طریق مایکت</span></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
-                    <div class="text-4xl mb-4">🎨</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">رابط کاربری مدرن</h3>
-                    <p class="text-gray-600 mb-4">طراحی زیبا و کاربرپسند مبتنی بر WebView.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">رابط کاربری تحت وب</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">ارتباط با JavascriptInterface</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">انیمیشن‌های روان</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">طراحی واکنش‌گرا</span></li>
-                    </ul>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition border border-orange-100">
-                    <div class="text-4xl mb-4">⚡</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">مدیریت دانلود هوشمند</h3>
-                    <p class="text-gray-600 mb-4">دانلود بهینه‌ی مدل‌ها با قابلیت ادامه و مدیریت فضا.</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center">◆<span class="mr-2">دانلود موازی چندبخشی</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">ادامه‌ی دانلود از نقطه‌ی توقف</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">بررسی فضای ذخیره‌سازی</span></li>
-                        <li class="flex items-center">◆<span class="mr-2">امکان لغو دانلود</span></li>
-                    </ul>
+                    <p class="text-gray-600">امکان پیوست فایل و استفاده از سیستم RAG برای تحلیل فایل‌های متنی، PDF و DOCX.</p>
                 </div>
             </div>
         </div>
@@ -807,24 +680,25 @@
     <!-- Download Section -->
     <section id="download" class="py-20 bg-gradient-to-br from-orange-600 to-red-600 text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
-
+        
         <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
             <h2 class="text-3xl md:text-5xl font-bold mb-6">همراه ما باشید</h2>
             <p class="text-xl text-orange-100 mb-10 max-w-2xl mx-auto">
-                اپلیکیشن پرتقال را همین حالا دانلود کنید و در انقلاب هوش مصنوعی آفلاین سهیم شوید. نسخه اندروید موجود است.
+                اپلیکیشن هوش مصنوعی پرتقال را همین حالا دانلود کنید و در انقلاب هوش مصنوعی آفلاین سهیم شوید. نسخه اندروید موجود است.
             </p>
-
+            
             <div class="flex flex-col items-center justify-center gap-6">
-                <a href="https://myket.ir/search?q=%D9%BE%D8%B1%D8%AA%D9%82%D8%A7%D9%84"
-                   target="_blank" rel="noopener"
+                <a href="https://myket.ir/app/porugal.com" 
                    class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-orange-700 bg-white rounded-full shadow-2xl hover:bg-gray-50 transition-all duration-300 transform hover:scale-105">
+                    <span class="absolute w-full h-full rounded-full opacity-0 group-hover:opacity-10 bg-black transition-opacity duration-300"></span>
                     <svg class="w-8 h-8 ml-3 text-orange-600" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M17.523 15.3414C17.523 15.3414 17.523 15.3414 17.523 15.3414C17.523 15.3414 17.523 15.3414 17.523 15.3414ZM6.47698 15.3414C6.47698 15.3414 6.47698 15.3414 6.47698 15.3414C6.47698 15.3414 6.47698 15.3414 6.47698 15.3414ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/>
                     </svg>
-                    دانلود از مایکت
+                    دانلود مستقیم از مایکت
+                    <span class="mr-2 text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">v4.0</span>
                 </a>
-
-                <div class="mt-4 text-sm text-orange-200 opacity-90">
+                
+                <div class="mt-4 text-sm text-orange-200 opacity-80">
                     لینک امن و مستقیم • حجم کم • نصب آسان
                 </div>
             </div>
@@ -834,44 +708,37 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-right">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-right">
                 <div>
                     <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
                         <span class="text-2xl">🍊</span>
-                        <span class="text-xl font-bold text-white">پرتقال AI</span>
+                        <span class="text-xl font-bold text-white">هوش مصنوعی پرتقال</span>
                     </div>
                     <p class="text-sm text-gray-400">
-                        اولین هوش مصنوعی آفلاین ایران با مدل زبانی اختصاصی PortaghalIR-3. قدرت هوش مصنوعی بدون نیاز به اینترنت.
+                        تلاش ما ساختن آینده‌ای روشن‌تر برای هم‌استانی‌های عزیزمان در لرستان است.
                     </p>
                 </div>
                 <div>
-                    <h4 class="text-white font-bold mb-4">دسترسی سریع</h4>
+                    <h4 class="text-white font-bold mb-4">لینک‌های مفید</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#about" class="hover:text-orange-500 transition">درباره پرتقال</a></li>
-                        <li><a href="#features" class="hover:text-orange-500 transition">قابلیت‌ها</a></li>
-                        <li><a href="#models" class="hover:text-orange-500 transition">مدل‌های زبانی</a></li>
+                        <li><a href="#home" class="hover:text-orange-500 transition">صفحه اصلی</a></li>
+                        <li><a href="#about" class="hover:text-orange-500 transition">درباره ما</a></li>
                         <li><a href="#faq" class="hover:text-orange-500 transition">سوالات متداول</a></li>
+                        <li><a href="#download" class="hover:text-orange-500 transition">دانلود اپلیکیشن</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-white font-bold mb-4">سایت‌های مرتبط</h4>
+                    <h4 class="text-white font-bold mb-4">پروژه‌های مرتبط</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="https://you1405com-bot.github.io/" target="_blank" rel="noopener" class="hover:text-orange-500 transition">صفحه اصلی پرتقال</a></li>
                         <li><a href="https://you1405com-bot.github.io/d/" target="_blank" rel="noopener" class="hover:text-orange-500 transition">آموزش و دانلود</a></li>
                         <li><a href="https://you1405com-bot.github.io/n/" target="_blank" rel="noopener" class="hover:text-orange-500 transition">مدل PortaghalIR-3</a></li>
-                        <li><a href="https://you1405com-bot.github.io/Porteghal-Programming-Group/" target="_blank" rel="noopener" class="hover:text-orange-500 transition">گروه برنامه‌نویسی</a></li>
                         <li><a href="https://you1405com-bot.github.io/Porteghal-Charity/" target="_blank" rel="noopener" class="hover:text-orange-500 transition">خیریه پرتقال</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="text-white font-bold mb-4">ارتباط با ما</h4>
-                    <p class="text-sm mb-2">📧 info@porteghal.ai</p>
-                    <p class="text-sm mb-2">🌐 porteghal.ai</p>
-                    <p class="text-sm">📱 کانال تلگرام</p>
-                </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
-                &copy; ۱۴۰۳ پرتقال AI - تمامی حقوق محفوظ است. ساخته شده با ❤️ در ایران
+                &copy; 2026 گروه برنامه نویسی پرتقال. تمامی حقوق محفوظ است.
             </div>
         </div>
     </footer>
@@ -885,16 +752,14 @@
             menu.classList.toggle('hidden');
         });
 
-        // Smooth Scroll
+        // Smooth Scroll for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                const target = document.querySelector(href);
-                if (!target) return;
                 e.preventDefault();
                 menu.classList.add('hidden');
-                target.scrollIntoView({ behavior: 'smooth' });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
     </script>
